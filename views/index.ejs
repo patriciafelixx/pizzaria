@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pizzaria Fantástica</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 	<form>
@@ -15,8 +14,8 @@
 	<main>
 		<% for (let pizza of pizzas) { %>			
 			<article>
-				<img src="<%= pizza.img %>" alt="Calabresa">
-				<button>+ Add</button>
+				<img src="<%= pizza.img %>" alt="<%= pizza.nome %>">
+				<a href="/pizzas/<%= pizza.id %>"><button>+ Add </button></a>
 				<div><%= pizza.nome %></div>
 				<span> <%= pizza.preco.toLocaleString('pt-br', { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' }) %></span>
 			</article>
