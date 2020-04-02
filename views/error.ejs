@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/pizza.css">
-    <title>Error</title>
-</head>
-<body>
-    <main>
-        <h1 class="erro">Erro</h1>
-        <article class="erro404">
-            4<img src="/img/pizza.png">4
-        </article>
-        <div class="notfound">
-            PÁGINA NÃO ENCONTRADA
-        </div>
-        <a class="voltar" href="/">Voltar a página inicial</a>
-    </main>
-</body>
-</html>
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>

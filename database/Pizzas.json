@@ -44,7 +44,7 @@
 		"nome":"Portuguesa",
 		"ingredientes":["cebola", "pimentão", "ovo", "mussarela", "presunto"],
 		"preco":40.5,
-		"img":"/img/portuguesa.jpg",
+		"img":"/img/quatroqueijos.jpg",
 		"destaque": true
 	},
 	{
@@ -60,7 +60,7 @@
 		"nome":"Caipira",
 		"ingredientes":["mussarela", "milho verde", "frango"],
 		"preco":38.5,
-		"img":"/img/caipira.jpg",
+		"img":"/img/quatroqueijos.jpg",
 		"destaque": true
 	},
 	{
@@ -68,7 +68,7 @@
 		"nome":"Napolitana",
 		"ingredientes":["mussarela", "gorgonzola", "provolone", "parmesão"],
 		"preco":55.5,
-		"img":"/img/napolitana.jpg",
+		"img":"/img/quatroqueijos.jpg",
 		"destaque": true
 	},
 	{
@@ -76,7 +76,7 @@
 		"nome":"Baiana",
 		"ingredientes":["mussarela", "gorgonzola", "provolone", "parmesão"],
 		"preco":38.5,
-		"img":"/img/baiana.jpg",
+		"img":"/img/quatroqueijos.jpg",
 		"destaque": true
 	},
 	{
@@ -84,7 +84,7 @@
 		"nome":"Meat & Bacon",
 		"ingredientes":["mussarela", "calabresa", "bacon"],
 		"preco":38.5,
-		"img":"/img/meatbacon.jpg",
+		"img":"/img/quatroqueijos.jpg",
 		"destaque": true
 	},
 	{
@@ -92,11 +92,11 @@
 		"nome":"Rúcula",
 		"ingredientes":["mussarela", "rúcula", "tomate seco"],
 		"preco":38.5,
-		"img":"/img/rucula.jpg",
+		"img":"/img/quatroqueijos.jpg",
 		"destaque": true
 	},
 	{
-		"id":5,
+		"id":13,
 		"nome":"Quatro Queijos",
 		"ingredientes":["mussarela", "gorgonzola", "provolone", "parmesão"],
 		"preco":38.5,
@@ -104,7 +104,7 @@
 		"destaque": true
 	},
 	{
-		"id":5,
+		"id":14,
 		"nome":"Quatro Queijos",
 		"ingredientes":["mussarela", "gorgonzola", "provolone", "parmesão"],
 		"preco":38.5,
@@ -112,7 +112,7 @@
 		"destaque": true
 	},
 	{
-		"id":5,
+		"id":15,
 		"nome":"Quatro Queijos",
 		"ingredientes":["mussarela", "gorgonzola", "provolone", "parmesão"],
 		"preco":38.5,
