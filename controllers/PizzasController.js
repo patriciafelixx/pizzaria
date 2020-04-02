@@ -2,7 +2,7 @@ const pizzas = require('../database/Pizzas.json');
 
 module.exports = {
 	index: (req, res)=>{
-		res.render("index",{pizzas});
+		res.render("index",{pizzas,busca:""});
 	},
 	show: (req, res) => {
 
@@ -33,18 +33,30 @@ module.exports = {
 			res.render("erros/pizzaNaoEncontrada",{id:req.params.id});
 		}
 	},
-	search: (req, res) => {		
-		// Capturar a info digitada pelo usuario
-		let { busca } = req.query;
-		
-		// Encontrar as pizzas buscadas
-		let pizzasEncontradas = pizzas.filter(pizza => pizza.nome.toLowerCase().includes(busca.toLowerCase()));
-
-		// Retornar a view (index) passando as pizzas encontradas
-		res.render("index",{ pizzas: pizzasEncontradas });
+	search: (req,res) => {
+		let busca = req.query.q;
+		if(busca){
+			let result = pizzas.filter( p => p.nome.toUpperCase().includes(busca.toUpperCase()) );
+			return res.render('index', {pizzas: result, busca});
+		} else {
+			return res.redirect('/');
+		}
 	},
-	add: (req, res) => {
-		let { id }  = req.body;
-		res.send(`Pizza de id ${id}.`);
+	edit: (req, res) =>{
+		// Carregar a pizza de id passado pela rota
+		let pizza = pizzas.find(
+			(pizza) => {
+				return pizza.id == req.params.id;
+			}
+		)
+
+		// Enviar view edit-pizza passando para ela a pizza carregada
+		return res.render("crud-pizzas/edit",{pizza});
+	},
+	create: (req,res) => {
+		return res.render("crud-pizzas/create");
+	},
+	list: (req,res) => {
+		return res.render("crud-pizzas/list",{pizzas});
 	}
 }
